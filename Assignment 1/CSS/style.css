@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid green;
+}
+
+.container {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.container-tittle {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    line-height: 40px;
+    ;
+}
+
+.row {
+    display: block;
+    position: relative;
+    width: 80%;
+    margin: 10px auto;
+    margin-bottom: 20px;
+
+}
+
+.main-box {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.blue-box, .red-box, .green-box, .orange-box{
+    height:40px;
+}
+
+/* row 1 */
+.flex-row {
+    display: flex;
+}
+
+#row1 .blue-box {
+    background-color: blue;
+    flex: 50%;
+}
+
+#row1 .red-box {
+    background-color: red;
+    flex: 50%;
+}
+
+/* row 2 */
+#row2 .green-box {
+    background-color: green;
+    /* width:95%; */
+    flex-grow: 1;
+}
+
+#row2 .blue-box {
+    background-color: blue;
+    width:75px; 
+}
+
+/* row 3 */
+#row3 .flex-row {
+    justify-content: space-between;
+    background-color: green;;
+}
+
+#row3 .red-box {
+    background-color: red;
+    width:75px;
+}
+
+#row3 .blue-box {
+    background-color: blue;
+    width:75px;
+}
+
+/* row 4 */
+#row4 .red-box {
+    background-color: red;
+    width:20%;
+    min-width:20%;
+    flex-grow: 1;
+}
+
+#row4 .blue-box {
+    background-color: blue;
+    width:75px;
+}
+
+/* row 5 */
+#row5 .flex-row {
+    height:40px;
+    justify-content: center;
+    align-items: center;
+    background-color: green;;
+}
+
+#row5 .red-box {
+    background-color: red;
+    width:28px;
+    height:28px;
+}
+
+/* row 6 */
+#row6 .flex-row {
+    justify-content: center;
+    background-color: red;;
+}
+
+#row6 .blue-box {
+    background-color: blue;
+    width:48px;
+    height:40px;
+}
+
+/* row 7 */
+#row7 .flex-row {
+    background-color: blue;
+    align-items: center;
+}
+
+#row7 .red-box {
+    background-color: red;
+    height:40px;
+    width:78.6719px;
+}
+#row7 .green-box {
+    background-color: green;
+    flex-grow: 1;
+    height:18px;
+}
+
+/* row 8 */
+#row8 .flex-row {
+    background-color: green;
+    justify-content: space-between;
+}
+
+#row8 .orange-box{
+    background-color: orange;
+    width: 55px;
+}
+
+ /* row 9 */
+ #row10 .flex-row {
+    justify-content: space-around;
+}
+
+#row9 .orange-box{
+    background-color: orange;
+    flex-grow: 1;
+    min-width:55px;
+}
+
+#row9 .green-box{
+    background-color: green;
+    width:14px;
+}
